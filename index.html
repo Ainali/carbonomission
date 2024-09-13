@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Permission Application - Office of Carbon Omission</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Header Section with Logged-In User and Log Out Button -->
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <svg
+   width="27.287188mm"
+   height="7.8688092mm"
+   viewBox="0 0 27.287188 7.8688093"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   sodipodi:docname="COC.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   class="logo">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="8.9740993"
+     inkscape:cx="64.853305"
+     inkscape:cy="28.24796"
+     inkscape:window-width="2048"
+     inkscape:window-height="1115"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-67.86527,-84.272315)">
+    <path
+       style="font-weight:bold;font-size:4.9389px;line-height:125%;font-family:Klima;-inkscape-font-specification:'Klima Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264582px"
+       d="m 81.660798,92.141024 c 1.588772,0 3.199012,-0.837326 3.402976,-2.812554 h -1.663916 c -0.118089,0.76218 -0.826589,1.395541 -1.696119,1.395541 -0.880266,0 -1.985962,-0.697771 -1.985962,-2.490504 0,-1.900083 1.094961,-2.52271 1.964492,-2.52271 0.82659,0 1.578036,0.547483 1.706854,1.352602 h 1.653181 c -0.203965,-1.728325 -1.58877,-2.791084 -3.381506,-2.791084 -1.824939,0 -3.596202,1.277458 -3.596202,3.961192 0,2.769611 1.953759,3.907517 3.596202,3.907517 z m -5.696699,-4.30471 h 1.381915 v -1.363336 h -1.381915 z m 0,2.662263 h 1.381915 v -1.363336 h -1.381915 z m 15.474072,1.631712 c 1.900083,0 3.714286,-1.341869 3.714286,-3.950457 0,-2.565648 -1.814203,-3.907517 -3.714286,-3.907517 -1.91082,0 -3.703553,1.320398 -3.703553,3.907517 0,2.630059 1.803468,3.950457 3.703553,3.950457 z m 0,-1.406278 c -0.933941,0 -2.061108,-0.74071 -2.061108,-2.544179 0,-1.771265 1.170108,-2.47977 2.061108,-2.47977 0.880263,0 2.071841,0.708505 2.071841,2.47977 0,1.792734 -1.170107,2.544179 -2.071841,2.544179 z m -5.734135,-2.887697 h 1.381914 v -1.363336 h -1.381914 z m 0,2.662263 h 1.381914 v -1.363336 h -1.381914 z m -14.135213,1.642547 c 1.900083,0 3.714286,-1.341869 3.714286,-3.950457 0,-2.565648 -1.814203,-3.907517 -3.714286,-3.907517 -1.91082,0 -3.703553,1.320398 -3.703553,3.907517 0,2.630059 1.803468,3.950457 3.703553,3.950457 z m 0,-1.406278 c -0.933941,0 -2.061108,-0.74071 -2.061108,-2.544179 0,-1.771265 1.170108,-2.47977 2.061108,-2.47977 0.880263,0 2.071841,0.708505 2.071841,2.47977 0,1.792734 -1.170107,2.544179 -2.071841,2.544179 z"
+       id="text1"
+       aria-label="C=O=C" />
+  </g>
+</svg>
+                <h1>Office of Carbon Omission</h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="about.html">Sustainability Programs</a>
+                    <a href="about.html">Flight Restrictions</a>
+                    <a href="about.html">Contact</a>
+                </nav>
+            </div>
+            <div class="user-info">
+                <span>Logged in as: <strong>John Doe</strong></span>
+                <button class="logout-btn">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Flight Permission Application Form -->
+    <form action="/submit-application" method="POST" onsubmit="return showPopup(event);">
+        <h2>Flight Permission Application</h2>
+        <p class="note">Note: Flights are only permitted for exceptional cases, and applicants must demonstrate a significant benefit to global sustainability.</p>
+
+        <!-- Flight Details (No personal information since user is logged in) -->
+        <label for="flight-purpose">Purpose of Flight</label>
+        <select id="flight-purpose" name="flight_purpose" required>
+            <option value="" disabled selected>Select the purpose of your flight</option>
+            <option value="humanitarian">Humanitarian Aid</option>
+            <option value="research">Research</option>
+            <option value="knowledge">Knowledge transfer</option>
+            <option value="governmental">Governmental Duty</option>
+            <option value="other">Other (specify in Justification field below)</option>
+        </select>
+
+        <label for="departure">Departure Location</label>
+        <input type="text" id="departure" name="departure_location" placeholder="Departure city and country" required>
+
+        <label for="destination">Destination Location</label>
+        <input type="text" id="destination" name="destination_location" placeholder="Destination city and country" required>
+
+        <!-- Date Pickers for Flight Dates -->
+        <div class="date-section">
+            <div>
+                <label for="departure-date">Departure Date</label>
+                <input type="date" id="departure-date" name="departure_date" required>
+            </div>
+            <div>
+                <label for="return-date">Return Date</label>
+                <input type="date" id="return-date" name="return_date" required>
+            </div>
+        </div>
+
+        <!-- Justification for Flight -->
+        <label for="justification">Justification for Flight</label>
+        <textarea id="justification" name="flight_justification" rows="5" placeholder="Explain why this flight is essential and why other travel options (e.g., remote meetings) are not feasible." required></textarea>
+
+        <!-- Contribution to Sustainable Development Goals (SDGs) -->
+        <label for="sdg-impact">How does this flight contribute to Sustainable Development Goals (SDGs)?</label><p class="linenote">Read more about the <a href="https://globalgoals.org">Sustainable Development Goals</a>.</p>
+        <textarea id="sdg-impact" name="sdg_impact" rows="5" placeholder="Detail how this trip aligns with or contributes towards specific SDGs (e.g., Goal 13: Climate Action, Goal 3: Good Health)." required></textarea>
+
+        <!-- Alternative Considerations -->
+        <label for="alternatives">Exploration of Alternatives</label>
+        <textarea id="alternatives" name="alternatives_explored" rows="4" placeholder="Describe the alternative methods of travel or remote solutions considered and explain why they are insufficient." required></textarea>
+
+        <!-- Agreement Section -->
+        <label>
+            <input type="checkbox" name="agree_terms" required><br />
+            I certify that the information provided is accurate, and I have explored all other options before applying for flight permission.
+        </label>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+    <!-- Modal for Art Project Message -->
+    <div id="artModal" class="modal">
+        <div class="modal-content">
+            <h2>Thank you for participating in this <a href="about.html">art project</a>.</h2>
+            <p><a href="https://mastodonshare.com/?text=Check out this Flight Permission Application!&url=https://carbonomission.org" class="submit-btn">Share on Mastodon</a></p>
+            <p><button class="close-btn" onclick="closePopup()">Close</button></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2030 Office of Carbon Omission. All content licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY 4.0.</a></p>
+        <p><a href="about.html">Privacy Policy</a> | <a href="about.html">Terms of Service</a> | <a href="about.html">Contact Us</a></p>
+    </footer>
+    <script>
+        // Function to show the popup modal
+        function showPopup(event) {
+            event.preventDefault(); // Prevent form from submitting
+            document.getElementById('artModal').style.display = 'block'; // Show the modal
+        }
+
+        // Function to close the popup modal
+        function closePopup() {
+            document.getElementById('artModal').style.display = 'none'; // Hide the modal
+        }
+    </script>
+</body>
+</html>
+

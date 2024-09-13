@@ -1,0 +1,254 @@
+body {
+    font-family: Klima, Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #004d00;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.04) 20px,
+    transparent 20px,
+    transparent 40px
+);
+}
+header .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/* logo */
+.logo {
+    position: absolute;
+    left: 30px;
+}
+
+/* User info */
+.user-info {
+    font-size: 14px;
+    position: absolute;
+    right: 30px;
+}
+.user-info span {
+    margin-right: 10px;
+}
+.logout-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.logout-btn:hover {
+    background-color: #218838;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #004d00;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.04) 20px,
+    transparent 20px,
+    transparent 40px
+);
+}
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+footer a {
+    color: #90ee90;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* About */
+.about {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+}
+h1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+h2 {
+    color: #004d00;
+    font-size: 24px;
+    text-align: center;
+}
+label {
+    font-weight: bold;
+}
+input, textarea, select {
+    width: calc(100% - 20px); /* Ensures padding inside form */
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+textarea {
+    resize: vertical;
+}
+.submit-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.submit-btn:hover {
+    background-color: #218838;
+    text-decoration: none;
+}
+.note {
+    font-size: 12px;
+    color: dark-gray;
+}
+.linenote {
+    font-size: 12px;
+    color: dark-gray;
+    margin-block-end: 0px;
+}
+
+/* Date Picker Styling */
+.date-section {
+    display: flex;
+    justify-content: space-between;
+}
+.date-section div {
+    width: 48%;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+.modal-content h2 {
+    font-size: 24px;
+    color: #004d00;
+}
+.close-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 960px) {
+    header .header-container {
+        flex-direction: column;
+    }
+    .header-left {
+        width: 100%;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    .user-info {
+        margin-top: 20px;
+        position: relative;
+        right: 0px;
+    }
+    .logo {
+        margin: 20px;
+        position: relative;
+        left: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    .logout-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

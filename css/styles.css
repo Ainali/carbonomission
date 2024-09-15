@@ -132,6 +132,10 @@ nav strong {
     background-color: #17a2b8;
 }
 
+.effective {
+    font-weight: bold;
+}
+
 
 /* Footer Styling */
 footer {

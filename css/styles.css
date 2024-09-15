@@ -286,6 +286,12 @@ textarea {
     margin-top: 20px;
 }
 
+/* Responsive images */
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Media query for mobile responsiveness */
 @media (max-width: 960px) {
     header .header-container {

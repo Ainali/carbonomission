@@ -136,6 +136,14 @@ nav strong {
     font-weight: bold;
 }
 
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
+
 
 /* Footer Styling */
 footer {

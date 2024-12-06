@@ -1,6 +1,6 @@
-# Office of Carbon Omissions
+# Office of Carbon Omission
 
-This repository contains the website for the Office of Carbon Omissions.
+This repository contains the website for the Office of Carbon Omission.
 
 ## Ideas, Bugs and Issues
 

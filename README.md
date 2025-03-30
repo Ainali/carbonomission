@@ -2,6 +2,12 @@
 
 This repository contains the website for the Office of Carbon Omission.
 
+## Requirements
+
+This site is built with [11ty](https://www.11ty.dev).
+
+Serve it locally with `npm start`.
+
 ## Ideas, Bugs and Issues
 
 Have an idea, bug or another issue? [Open a new issue](https://github.com/ainali/carbonomission/issues) here on GitHub.

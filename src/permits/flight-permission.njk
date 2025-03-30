@@ -1,0 +1,80 @@
+---
+title: Flight Permission Application
+layout: 'base.njk'
+tags: ["transport", "permit"]
+---
+    
+<!-- Flight Permission Application Form -->
+<form action="/submit-application" method="POST" onsubmit="return showPopup(event);">
+<h1>{{ title }}</h1>
+<p class="note">Note: Flights are only permitted for exceptional cases, and applicants must demonstrate a significant benefit to global sustainability.</p>
+
+<!-- Flight Details (No personal information since user is logged in) -->
+<label for="flight-purpose">Purpose of Flight</label>
+<select id="flight-purpose" name="flight_purpose" required>
+    <option value="" disabled selected>Select the purpose of your flight</option>
+    <option value="humanitarian">Humanitarian Aid</option>
+    <option value="research">Research</option>
+    <option value="governmental">Governmental Duty</option>
+    <option value="other">Other (specify in Justification field below)</option>
+</select>
+
+<label for="departure">Departure Location</label>
+<input type="text" id="departure" name="departure_location" placeholder="Departure city and country" required>
+
+<label for="destination">Destination Location</label>
+<input type="text" id="destination" name="destination_location" placeholder="Destination city and country" required>
+
+<!-- Date Pickers for Flight Dates -->
+<div class="date-section">
+    <div>
+        <label for="departure-date">Departure Date</label>
+        <input type="date" id="departure-date" name="departure_date" required>
+    </div>
+    <div>
+        <label for="return-date">Return Date</label>
+        <input type="date" id="return-date" name="return_date">
+    </div>
+</div>
+
+<!-- Justification for Flight -->
+<label for="justification">Justification for Flight</label>
+<textarea id="justification" name="flight_justification" rows="5" placeholder="Explain why this flight is essential and why other travel options (e.g., remote meetings) are not feasible." required></textarea>
+
+<!-- Contribution to Sustainable Development Goals (SDGs) -->
+<label for="sdg-impact">How does this flight contribute to Sustainable Development Goals (SDGs)?</label><p class="linenote">Read more about the <a href="https://globalgoals.org">Sustainable Development Goals</a>.</p>
+<textarea id="sdg-impact" name="sdg_impact" rows="5" placeholder="Detail how this trip aligns with or contributes towards specific SDGs (e.g., Goal 13: Climate Action, Goal 3: Good Health)." required></textarea>
+
+<!-- Alternative Considerations -->
+<label for="alternatives">Exploration of Alternatives</label>
+<textarea id="alternatives" name="alternatives_explored" rows="4" placeholder="Describe the alternative methods of travel or remote solutions considered and explain why they are insufficient." required></textarea>
+
+<!-- Agreement Section -->
+<label>
+    <input type="checkbox" name="agree_terms" required><br>
+    I certify that the information provided is accurate, and I have explored all other options before applying for flight permission.
+</label>
+
+<button type="submit" class="submit-btn">Submit Application</button>
+</form>
+<!-- Modal for Art Project Message -->
+<div id="artModal" class="modal">
+<div class="modal-content">
+    <h2>Thank you for participating in this <a href="about.html">art project</a>.</h2>
+    <p><a href="https://mastodonshare.com/?text=Check%20out%20this%20Flight%20Permission%20Application!&url=https://carbonomission.org" class="submit-btn">Share on Mastodon</a></p>
+    <p><button class="close-btn" onclick="closePopup()">Close</button></p>
+</div>
+</div>
+
+<script>
+// Function to show the popup modal
+function showPopup(event) {
+    event.preventDefault(); // Prevent form from submitting
+    document.getElementById('artModal').style.display = 'block'; // Show the modal
+}
+
+// Function to close the popup modal
+function closePopup() {
+    document.getElementById('artModal').style.display = 'none'; // Hide the modal
+}
+</script>

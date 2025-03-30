@@ -37,6 +37,14 @@ header h1 {
     font-size: 32px;
     font-weight: bold;
 }
+
+.logotext {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
 nav {
     margin-top: 10px;
 }
@@ -198,7 +206,7 @@ form {
     margin: 30px auto;
 }
 h1 {
-    color: white;
+    color: #004d00;
     font-size: 24px;
     text-align: center;
 }

@@ -1,0 +1,15 @@
+---
+title: Science
+layout: 'base.njk'
+---
+    
+<div class="about">
+	<h1>{{ title }}</h1>
+	<p>The Office of Carbon Omission is a strictly science-based agency.</p>
+	<p>This is the science backing our decisions:</p>
+	<ul>
+	  {%- for item in collections.science | reverse -%} 
+	  <li><a href="{{ item.url }}">{{ item.data.title }}</<a></li>
+	  {%- endfor %}
+	</ul>
+</div>

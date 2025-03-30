@@ -1,0 +1,13 @@
+---
+layout: 'base.njk'
+---
+<div class="about">
+<div class="news-item">
+    <h1>{{ title }}</h1>
+    <div class="meta-info">
+        {{ published }} by <a href="{{ sourceurl }}">{{ source }}</a> effective by <span class="effective">{{ effectivedate }}</span> <span class="flag">{{ flag }}</span>
+    </div>
+    <div class="tag tag-{{ level }}">{{ level }} regulation</div>
+    {{ content | safe }}
+</div>
+</div>

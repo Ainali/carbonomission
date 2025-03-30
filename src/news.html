@@ -1,0 +1,19 @@
+---
+title: News
+layout: 'base.njk'
+---
+    
+<div class="about">
+	<h1>{{ title }}</h1>
+	<p>The Office of Carbon Omission collects carbon omitting initiatives from all around the world.</p>
+	{%- for news in collections.news | reverse -%}
+		<div class="news-item">
+			<h2>{{ news.data.title }}</h2>
+			<div class="meta-info">
+				{{ news.data.published }} by <a href="{{ news.data.sourceurl }}">{{ news.data.source }}</a> effective by <span class="effective">{{ news.data.effectivedate }}</span> <span class="flag">{{ news.data.flag }}</span>
+			</div>
+			<div class="tag tag-{{ news.data.level }}">{{ news.data.level }} regulation</div>
+			<p><a href="{{ news.url }}">Read more</a></p>
+		</div>
+	{%- endfor %}
+</div>

@@ -1,0 +1,15 @@
+---
+title: Permits
+layout: 'base.njk'
+---
+    
+<div class="about">
+	<h1>{{ title }}</h1>
+	<p>Carbon emitting activities can no longer be done without oversight. Therefore, you may need a permit to conduct some of them.</p>
+	<p>These are the permits you can apply for at the Office of Carbon Omisson:</p>
+	<ul>
+	  {%- for permit in collections.permit | reverse -%} 
+	  <li><a href="{{ permit.url }}">{{ permit.data.title }}</<a></li>
+	  {%- endfor %}
+	</ul>
+</div>

@@ -1,0 +1,13 @@
+---
+title: Topics
+layout: 'base.njk'
+---
+    
+<div class="about">
+	<h1>{{ title }}</h1>
+	<ul>
+	  {%- for topic in collections.topic | reverse -%} 
+	  <li><a href="{{ topic.url }}">{{ topic.data.title }}</<a></li>
+	  {%- endfor %}
+	</ul>
+</div>

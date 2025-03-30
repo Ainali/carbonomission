@@ -1,0 +1,49 @@
+---
+title: Transport
+layout: 'base.njk'
+tags: topic
+---
+    
+<div class="about">
+	<h1>{{ title }}</h1>
+	<h2>News</h2>
+	<ul>
+	{%- for item in collections.transport -%}
+		{%- for tag in item.data.tags -%}
+			{%- if tag == "news" -%}
+			<li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+			{%- endif -%}
+	  	{%- endfor %}
+	{%- endfor %}
+  	</ul>
+  	<h2>Laws and regulations</h2>
+	<ul>
+	{%- for item in collections.transport -%}
+		{%- for tag in item.data.tags -%}
+			{%- if tag == "law" -%}
+			<li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+			{%- endif -%}
+	  	{%- endfor %}
+	{%- endfor %}
+  	</ul>
+  	<h2>Permits</h2>
+	<ul>
+	{%- for item in collections.transport -%}
+		{%- for tag in item.data.tags -%}
+			{%- if tag == "permit" -%}
+			<li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+			{%- endif -%}
+	  	{%- endfor %}
+	{%- endfor %}
+  	</ul>
+  	<h2>Science</h2>
+	<ul>
+	{%- for item in collections.transport -%}
+		{%- for tag in item.data.tags -%}
+			{%- if tag == "science" -%}
+			<li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+			{%- endif -%}
+	  	{%- endfor %}
+	{%- endfor %}
+  	</ul>
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "carbonomission",
+  "version": "1.0.0",
+  "description": "This repository contains the website for the Office of Carbon Omission.",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ainali/carbonomission.git"
+  },
+  "keywords": [],
+  "author": "Jan Ainali",
+  "license": "cc-by-sa-4.0",
+  "bugs": {
+    "url": "https://github.com/Ainali/carbonomission/issues"
+  },
+  "homepage": "https://github.com/Ainali/carbonomission#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

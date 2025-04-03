@@ -45,6 +45,10 @@ header h1 {
     text-align: center;
 }
 
+.logotext:hover {
+  color: #fffff0;
+}
+
 nav {
     margin-top: 10px;
 }
